@@ -1,13 +1,36 @@
 {
   "expo": {
-    "scheme": "acme",
-    "web": {
-      "bundler": "metro"
+    "name": "Simple App",
+    "slug": "todo-list",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/t.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/t.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
     },
-    "plugins": [
-      "expo-router"
+    "assetBundlePatterns": [
+      "**/*"
     ],
-    "name": "todo-list",
-    "slug": "todo-list"
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.fawadeqbal.todolist"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1d8d3ab6-b8d8-4af9-b345-95292ef04002"
+      }
+    }
   }
 }
